@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Exercise the --keep option.
 
 # Copyright (C) 2013-2016 Free Software Foundation, Inc.

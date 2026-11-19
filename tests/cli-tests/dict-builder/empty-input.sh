@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 set -e
 for i in $(seq 50); do
     datagen -s$i > file$i

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Ensure that zgrep -f - works like grep -f -
 # Before gzip-1.4, it would fail.
 

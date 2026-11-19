@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # gzip should report invalid 'unpack' input when uncompressing.
 # With gzip-1.5, it would output invalid data instead.
 

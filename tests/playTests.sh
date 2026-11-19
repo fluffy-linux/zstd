@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 set -e # exit immediately on error
 # set -x # print commands before execution (debug)
@@ -223,7 +223,7 @@ ZSTD_CLEVEL=50000000000 zstd -f tmp # numeric value too large, warn and revert t
 println "test : override ZSTD_CLEVEL with command line option"
 ZSTD_CLEVEL=12  zstd --fast=3 -f tmp # overridden by command line option
 
-# temporary envvar changes in the above tests would actually persist in macos /bin/sh
+# temporary envvar changes in the above tests would actually persist in macos /sw/bash/bin/bash
 unset ZSTD_CLEVEL
 
 
@@ -1571,7 +1571,7 @@ then
     ZSTD_NBTHREADS=50000000000 zstd -f mt_tmp # numeric value too large, warn and revert to default setting=
     ZSTD_NBTHREADS=2  zstd -f mt_tmp # correct usage
     ZSTD_NBTHREADS=1  zstd -f mt_tmp # correct usage: single thread
-    # temporary envvar changes in the above tests would actually persist in macos /bin/sh
+    # temporary envvar changes in the above tests would actually persist in macos /sw/bash/bin/bash
     unset ZSTD_NBTHREADS
     rm -f mt_tmp*
 

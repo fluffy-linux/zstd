@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Where to find the sources (only used to copy zstd.h)
 ZSTD_SRC_ROOT="../../lib"

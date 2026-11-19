@@ -1,2 +1,2 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 "$ZSTDGREP_BIN" $@

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # gzip accepts trailing NUL bytes; don't fail if there is exactly one.
 # Before gzip-1.4, this would fail.
 

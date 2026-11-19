@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Ensure that zgrep -15 works.  Before gzip-1.5, it would fail.
 
 # Copyright (C) 2012-2016 Free Software Foundation, Inc.

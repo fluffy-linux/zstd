@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/sw/bash/bin/bash
 # Make sure all these programs work properly
 # when invoked with --help or --version.
 
@@ -20,7 +20,7 @@
 # Ensure that $SHELL is set to *some* value and exported.
 # This is required for dircolors, which would fail e.g., when
 # invoked via debuild (which removes SHELL from the environment).
-test "x$SHELL" = x && SHELL=/bin/sh
+test "x$SHELL" = x && SHELL=/sw/bash/bin/bash
 export SHELL
 
 . "${srcdir=.}/init.sh"; path_prepend_ .
@@ -216,7 +216,7 @@ df_setup () { args=/; }
 # This is necessary in the unusual event that getpwuid (getuid ()) fails.
 id_setup () { args=-u; }
 
-# Use env to avoid invoking built-in sleep of Solaris 11's /bin/sh.
+# Use env to avoid invoking built-in sleep of Solaris 11's /sw/bash/bin/bash.
 kill_setup () {
   env sleep 10m &
   args=$!

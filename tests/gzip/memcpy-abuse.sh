@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Before gzip-1.4, this the use of memcpy in inflate_codes could
 # mistakenly operate on overlapping regions.  Exercise that code.
 

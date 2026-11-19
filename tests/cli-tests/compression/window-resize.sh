@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 datagen -g1G > file
 zstd --long=30 -1 --single-thread --no-content-size -f file
 zstd -l -v file.zst

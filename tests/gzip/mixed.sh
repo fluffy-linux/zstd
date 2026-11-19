@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Ensure that gzip -cdf handles mixed compressed/not-compressed data
 # Before gzip-1.5, it would produce invalid output.
 

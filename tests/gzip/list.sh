@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Exercise the --list option.
 
 # Copyright 2016 Free Software Foundation, Inc.

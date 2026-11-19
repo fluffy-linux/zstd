@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Before gzip-1.4, gzip -d would segfault on some inputs.
 
 # Copyright (C) 2010-2016 Free Software Foundation, Inc.

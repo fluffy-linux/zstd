@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Exercise zdiff with two compressed inputs.
 # Before gzip-1.4, this would fail.
 

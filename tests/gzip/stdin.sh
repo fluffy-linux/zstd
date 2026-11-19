@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Ensure that gzip interprets "-" as stdin.
 
 # Copyright (C) 2009-2016 Free Software Foundation, Inc.

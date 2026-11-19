@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 . "$COMMON/platform.sh"
 

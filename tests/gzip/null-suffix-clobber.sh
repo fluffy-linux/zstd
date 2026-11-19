@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Before gzip-1.5, gzip -d -S '' k.gz would delete F.gz and not create "F"
 
 # Copyright (C) 2010-2016 Free Software Foundation, Inc.
