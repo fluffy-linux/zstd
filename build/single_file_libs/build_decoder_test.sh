@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 # Temporary compiled binary
 OUT_FILE="tempbin"

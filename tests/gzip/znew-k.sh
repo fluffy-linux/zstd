@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Check that znew -K works without compress(1).
 
 # Copyright (C) 2010-2016 Free Software Foundation, Inc.
@@ -20,7 +20,7 @@
 . "${srcdir=.}/init.sh"; path_prepend_ .
 
 cat <<'EOF' >compress || framework_failure_
-#!/bin/sh
+#!/sw/bash/bin/bash
 echo >&2 'compress has been invoked'
 exit 1
 EOF

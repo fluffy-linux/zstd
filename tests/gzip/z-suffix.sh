@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Check that -Sz works.
 
 # Copyright 2014-2016 Free Software Foundation, Inc.

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Check that zgrep is terminated gracefully by signal when
 # its grep/sed pipeline is terminated by a signal.
 

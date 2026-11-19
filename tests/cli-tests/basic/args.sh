@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 println "+ zstd --blah" >&2
 zstd --blah

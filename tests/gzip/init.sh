@@ -20,7 +20,7 @@
 #
 # The typical skeleton of a test looks like this:
 #
-#   #!/bin/sh
+#   #!/sw/bash/bin/bash
 #   . "${srcdir=.}/init.sh"; path_prepend_ .
 #   Execute some commands.
 #   Note that these commands are executed in a subdirectory, therefore you
@@ -139,10 +139,10 @@ fi
 # If no acceptable shell is found, skip the current test.
 #
 # The "...set -x; P=1 true 2>err..." test is to disqualify any shell that
-# emits "P=1" into err, as /bin/sh from SunOS 5.11 and OpenBSD 4.7 do.
+# emits "P=1" into err, as /sw/bash/bin/bash from SunOS 5.11 and OpenBSD 4.7 do.
 #
 # Use "9" to indicate success (rather than 0), in case some shell acts
-# like Solaris 10's /bin/sh but exits successfully instead of with status 2.
+# like Solaris 10's /sw/bash/bin/bash but exits successfully instead of with status 2.
 
 # Eval this code in a subshell to determine a shell's suitability.
 # 10 - passes all tests; ok to use
@@ -177,7 +177,7 @@ else
 
   # Search for a shell that meets our requirements.
   for re_shell_ in __current__ "${CONFIG_SHELL:-no_shell}" \
-      /bin/sh bash dash zsh pdksh fail
+      /sw/bash/bin/bash bash dash zsh pdksh fail
   do
     test "$re_shell_" = no_shell && continue
 
@@ -192,7 +192,7 @@ else
     # When testing the current shell, simply "eval" the test code.
     # Otherwise, run it via $re_shell_ -c ...
     if test "$re_shell_" = __current__; then
-      # 'eval'ing this code makes Solaris 10's /bin/sh exit with
+      # 'eval'ing this code makes Solaris 10's /sw/bash/bin/bash exit with
       # $? set to 2.  It does not evaluate any of the code after the
       # "unexpected" first '('.  Thus, we must run it in a subshell.
       ( eval "$gl_shell_test_script_" ) > /dev/null 2>&1
@@ -460,7 +460,7 @@ setup_ ()
 {
   if test "$VERBOSE" = yes; then
     # Test whether set -x may cause the selected shell to corrupt an
-    # application's stderr.  Many do, including zsh-4.3.10 and the /bin/sh
+    # application's stderr.  Many do, including zsh-4.3.10 and the /sw/bash/bin/bash
     # from SunOS 5.11, OpenBSD 4.7 and Irix 5.x and 6.5.
     # If enabling verbose output this way would cause trouble, simply
     # issue a warning and refrain.

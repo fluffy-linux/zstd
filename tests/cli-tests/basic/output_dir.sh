@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 
 println "+ zstd -r * --output-dir-mirror=\"\""
 zstd -r * --output-dir-mirror="" && die "Should not allow empty output dir!"

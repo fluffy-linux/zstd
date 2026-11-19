@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/sw/bash/bin/bash
 # Test the obsolescent GZIP environment variable.
 
 # Copyright 2015-2016 Free Software Foundation, Inc.
